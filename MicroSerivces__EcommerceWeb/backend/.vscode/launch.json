@@ -30,6 +30,16 @@
             "projectName": "orderservice",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-CheckoutserviceApplication<checkoutservice>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.checkout.checkoutservice.CheckoutserviceApplication",
+            "projectName": "checkoutservice",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
