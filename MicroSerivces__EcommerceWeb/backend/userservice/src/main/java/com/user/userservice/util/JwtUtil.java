@@ -37,11 +37,18 @@ public class JwtUtil {
     }
 
     public Claims extractClaims(String token) {
-        return Jwts.parserBuilder()
-                .setSigningKey(getSigninKey())
-                .build()
-                .parseClaimsJws(token)
-                .getBody();
+        // DEPRECATED
+        // return Jwts.parserBuilder()
+        //         .setSigningKey(getSigninKey())
+        //         .build()
+        //         .parseClaimsJws(token)
+        //         .getBody();
+
+        return Jwts.parser()
+        .verifyWith(getSigninKey())
+        .build()
+        .parseSignedClaims(token)
+        .getPayload();
     }
 
     public String extractUsername(String token) {
