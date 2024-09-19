@@ -40,6 +40,26 @@
             "projectName": "checkoutservice",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-PaymentserviceApplication<paymentservice>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.payment.paymentservice.PaymentserviceApplication",
+            "projectName": "paymentservice",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-DiscoveryserviceApplication<discoveryservice>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.discovery.discoveryservice.DiscoveryserviceApplication",
+            "projectName": "discoveryservice",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
