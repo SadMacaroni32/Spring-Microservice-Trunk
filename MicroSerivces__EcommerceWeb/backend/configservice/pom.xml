@@ -26,12 +26,6 @@
             <artifactId>spring-cloud-config-server</artifactId>
         </dependency>
 
-        <!-- Spring Cloud Netflix Eureka Server -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-        </dependency>
-
         <!-- Spring Boot Test Starter -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
